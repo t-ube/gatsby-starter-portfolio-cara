@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { Box, Flex, Link, useColorMode, jsx } from "theme-ui"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
   const [colorMode, setColorMode] = useColorMode()
@@ -31,10 +32,10 @@ const Footer = () => {
         }}
       >
         {isDark ? (
-          <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_v2-light_w30.png" alt="LekoArts Logo" />
-        ) : (
-          <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_v2_w30.png" alt="LekoArts Logo" />
-        )}
+          <img width="30" height="30" src="/logo-light-32.png" alt="LekoArts Logo" />
+        ) :
+          <img width="30" height="30" src="/logo-32.png" alt="LekoArts Logo" />
+        }
         {` `}
         <div sx={{ mx: 1 }}>coder.okinawa.jp</div>
         {` `}
