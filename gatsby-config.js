@@ -60,5 +60,14 @@ module.exports = {
         openAnalyzer: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-WPGE9DDPRG"],
+        pluginConfig: {
+          head: true
+        }
+      }
+    },
   ].filter(Boolean),
 }
