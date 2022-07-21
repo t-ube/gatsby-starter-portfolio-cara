@@ -69,5 +69,11 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+          excludes: [`/404/`,]
+      }
+  },
   ].filter(Boolean),
 }
